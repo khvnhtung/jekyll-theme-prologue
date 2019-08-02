@@ -1,7 +1,9 @@
 ---
 layout: page
 title: "My Impossible list"
-description: "List of impossible things that I want to accomplish"
+subtitle: "List of impossible things that I want to accomplish"
+icon: fa-list
+order: 4
 ---
 
 Healh/Fitness Goals

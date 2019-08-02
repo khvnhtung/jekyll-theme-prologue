@@ -1,7 +1,9 @@
 ---
 layout: page
 title: "iOS learning resources"
-description: "Good resources to learn iOS development"
+subtitle: "Good resources to learn iOS development"
+icon: fa-info-circle
+order: 5
 ---
 
 If you are new to coding, you should read this first
