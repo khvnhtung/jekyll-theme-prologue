@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Rouge+Script');
+
+// Settings
+$font-stack-script: Rouge Script, script;
+$font-stack-serif: Times, Times New Roman, serif;
+
+
+
+// Generator
+.generator {}
+
+
+
+// Settings
+.generator__settings {}
+
+.generator__setting {
+  border: none;
+  padding: 0;
+  
+  line-height: 2em;
+  
+  .generator__input {
+    float: left;
+    width: 3em;
+  }
+}
+
+.generator__input {
+  border: none;
+  border-bottom: 2px solid #fff;
+  height: 1.5em;
+  padding: 0 0.5em;
+  margin: 0.25em 0;
+  
+  line-height: 1.5em;
+  color: #fff;
+  text-align: center;
+  
+  background: #051120;
+  
+  border-radius: 3px;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+// Roles
+.generator__roles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.generator__role {
+  border: none;
+  padding: 0 15px;
+  flex-basis: 10em;
+  overflow: hidden;
+  
+  position: relative;
+  
+  line-height: 2.1em;
+  
+  cursor: pointer;
+  
+  .generator__label {
+    float: left;
+  }
+}
+
+.generator__label {
+  padding-left: 0.5em;
+}
+
+.generator__roles-title {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.generator__label[for] {
+  cursor: pointer;
+  
+  .generator__checkbox[disabled] ~ & {
+    cursor: not-allowed;
+  }
+}
+
+.generator__badge {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  overflow: hidden;
+  
+  position: relative;
+  top: -0.1em;
+  
+  color: #0B2240;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.6em;
+  line-height: 1.5em;
+  vertical-align: text-bottom;
+  text-align: center;
+  
+  background: #fff;
+  
+  border-radius: 100%;
+  cursor: help;
+}
+
+.generator__badge--good {
+  color: #fff;
+  
+  background: #DFA500;
+}
+
+.generator__badge--evil {
+  color: #fff; 
+  
+  background: #E9576A;
+}
+
+.generator__checkbox {
+  position: absolute;
+  right: 101%;
+}
+
+.generator__switch {
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+  float: left;
+  margin: 0.255em 0 0.255em 0;
+  
+  position: relative;
+  
+  background: #051120;
+  
+  border-radius: 3px;
+  cursor: pointer;
+  
+  &:before,
+  &:after {
+    content: '';
+    width: 2px;
+    height: 0.75em;
+
+    position: absolute;
+    top: 0.25em;
+    left: 40%;
+
+    background: #fff;
+
+    transform-origin: center bottom;
+    transition: 0.1s ease-in-out;
+    opacity: 0;
+  }
+      
+  &:before {
+    transform: rotateZ(-45deg) scaleY(0.01);
+  }
+
+  &:after {
+    transform: rotateZ(45deg) scaleY(0.01);
+  }
+
+  .generator__checkbox[disabled] + & {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  
+  .generator__checkbox:checked + & {
+    &:before,
+    &:after {
+      opacity: 1;
+    }
+      
+    &:before {
+      transform: rotateZ(-45deg) scaleY(0.5);
+    }
+    
+    &:after {
+      transform: rotateZ(45deg);
+    }
+  }
+}
+
+
+
+// Generate
+.generator__button {
+  border: none;
+  height: 2.1em;
+  padding: 0 1em;
+  
+  line-height: 2.1em;
+  color: #fff;
+  font-family: $font-stack-serif;
+  
+  background: #051120;
+  
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+// Results
+.generator__results {
+  overflow: hidden;
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.generator__results-title,
+.generator__results-desc {
+  width: 100%;  
+  padding: 0 15px;
+}
+
+.generator__results-team {
+  padding: 0 15px;
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
+
+.generator__team-title {
+  margin-top: 0;
+}
+
+
+
+// Document base
+html,
+body {
+  margin: 0;
+  
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.025em;
+  color: #fff;
+  
+  background: linear-gradient(-30deg, #05387B, #0B2240);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  
+  font-family: $font-stack-serif;
+  
+  @media (min-width: 600px) {
+    font-size: 20px;
+  }
+}
+
+body {
+  padding: 20px;
+  
+  @media (min-width: 600px) {
+    padding: 30px;
+  }
+}
+
+p, ul, ol, li {
+  max-width: 40rem;
+}
+
+h1, h2, h3, h4 {
+  margin: 2.8rem 0 0.7rem;
+  
+  font-family: $font-stack-script;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: 2em;
+  
+  &:first-child {
+    margin-top: 0.7em;
+  }
+}
+
+h2, h3, h4 {
+  font-size: 1.75em;
+}
+
+a {
+  color: #E9576A;
+  text-decoration: none;
+  
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+input {
+  font-family: $font-stack-serif;
+  font-size: 1em;
+}
