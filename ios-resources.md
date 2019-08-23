@@ -18,11 +18,11 @@ The complete iOS developer roadmap and guides:
 Learning about Swift syntaxes:
 - [Docs - Swift book](https://docs.swift.org/swift-book/)
 - [Tutorialspoint - Swift syntax](https://www.tutorialspoint.com/swift/swift_basic_syntax.htm)
+- [Swift cheatsheet by reinder42](https://github.com/reinder42/SwiftCheatsheet/blob/master/swift-cheatsheet.md)
 
 Sites to practice your skills:
 - [Exercism - Swift](https://exercism.io/my/tracks/swift)
 - [Codewars](https://www.codewars.com)
-- [Swift cheatsheet by reinder42](https://github.com/reinder42/SwiftCheatsheet/blob/master/swift-cheatsheet.md)
 
 Some projects to help you warm up:
 - [Apple - Getting started project](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/ImplementingACustomControl.html#//apple_ref/doc/uid/TP40015214-CH19-SW1)
