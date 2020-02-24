@@ -11,7 +11,7 @@ If you are struggle when learning to code, maybe this article may be helpful to 
 
 If you are a fresh out freelance developer,
 - [Toptal - iOS hiring guide](https://www.toptal.com/ios#hiring-guide) <br>
- I greatly recommend you to read the hiring guide above.
+I greatly recommend you to read the hiring guide above.
 
 One of the guy over there has reached out to me and want some of my opinion on this. Its a very useful read to guide you on how to attain important iOS concepts and mastered some interview questions in order to prepare you for landing a job.
 
